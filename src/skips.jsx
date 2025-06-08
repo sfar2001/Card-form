@@ -9,12 +9,8 @@ function Skips() {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const data = await fetchskip();
-        setSkips(data);
-      } catch (error) {
-        console.error("Error fetching skips:", error);
-      }
+      const data = await fetchskip();
+      setSkips(data.skips); // Ensure skips is set to the correct array
     };
 
     fetchData();

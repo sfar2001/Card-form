@@ -9,7 +9,7 @@ function App() {
   return (
      <Router>
      <Routes>
-        <Route path="/skips" element={<Skips/>} />
+        <Route path="/" element={<Skips/>} />
       </Routes>
     </Router>
   )
